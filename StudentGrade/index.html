@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+   <div class="header">
+    <img src="images/logo.png" class="icon-top">
+    <h1>Student Grade Calculator</h1>
+    </div>
+
+    <!-- STEP 1 -->
+    <div id="step1">
+        <input type="text" id="subjectName" placeholder="Enter Subject Name">
+        <button onclick="addSubject()">Add</button>
+
+        <div id="subjectList" class="subject-list"></div>
+
+        <button onclick="proceed()">Proceed</button>
+    </div>
+
+    <!-- STEP 2 -->
+    <div id="step2" class="hidden">
+        <div id="marksContainer"></div>
+
+        <button onclick="calculate()">Calculate</button>
+        <button onclick="resetGame()">Reset</button>
+
+        <div id="result">
+            <p>Total: <span id="total"></span></p>
+            <p>Average: <span id="average"></span></p>
+            <p>Grade: <span id="grade"></span></p>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
